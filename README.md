@@ -1,6 +1,8 @@
 
 # GenerativeOS
 
+https://github.com/user-attachments/assets/97645c72-e329-4624-afd1-328f10677ecb
+
 A revolutionary operating system concept where applications are generated on-demand by AI based on user needs. No pre-installed apps - everything is created dynamically as you need it.
 
 ## 🌟 Key Features
@@ -271,7 +273,6 @@ npm run dev
 ### Key Areas for Contribution
 - New UI components 
 
-https://github.com/user-attachments/assets/97645c72-e329-4624-afd1-328f10677ecb
 
 or the dynamic renderer
 - Enhanced hardware integrations
