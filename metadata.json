@@ -1,0 +1,7 @@
+{
+  "name": "Generative OS",
+  "description": "A concept operating system where application UIs are generated on-the-fly by AI based on user requests. Type a command like 'check my emails' or 'show me the weather' to see it in action.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

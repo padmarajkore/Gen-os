@@ -1,0 +1,40 @@
+{
+  "name": "generative-os",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "electron/main.js",
+  "config": {
+    "forge": "./forge.config.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:desktop": "concurrently \"npm:dev\" \"wait-on http://localhost:3000\" \"npm:electron\"",
+    "electron": "cross-env VITE_DEV_SERVER_URL=http://localhost:3000 electron-forge start",
+    "build": "vite build",
+    "build:desktop": "npm run build && electron-forge make --platform=darwin",
+    "package:desktop": "npm run build && electron-forge package --platform=darwin",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/genai": "^1.27.0",
+    "@lmstudio/sdk": "^1.5.0",
+    "idb": "^8.0.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.5.0",
+    "@electron-forge/maker-dmg": "^7.5.0",
+    "@electron-forge/maker-zip": "^7.5.0",
+    "@types/electron": "^1.6.12",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "electron": "^30.0.7",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "wait-on": "^7.2.0"
+  }
+}
