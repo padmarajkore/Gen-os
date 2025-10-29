@@ -269,7 +269,11 @@ npm run dev
 ```
 
 ### Key Areas for Contribution
-- New UI components for the dynamic renderer
+- New UI components 
+
+https://github.com/user-attachments/assets/97645c72-e329-4624-afd1-328f10677ecb
+
+or the dynamic renderer
 - Enhanced hardware integrations
 - Performance optimizations
 - Security improvements
